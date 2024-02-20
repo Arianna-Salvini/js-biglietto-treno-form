@@ -1,6 +1,6 @@
 // Create const button and event
-const btnGenerate = document.querySelector("#btn_generate");
-btnGenerate.addEventListener("click", function () {
+const btn_generate = document.querySelector("#btn_generate");
+btn_generate.addEventListener("click", function () {
     
         // Create variables for age and km and create button
         const total_km = document.getElementById("km").value;
@@ -33,4 +33,10 @@ btnGenerate.addEventListener("click", function () {
 
         console.log(amount_tot);
 
+    });
+
+    const btn_cancel = document.getElementById("btn_cancel")
+    btn_cancel.addEventListener("click", function () {
+        document.getElementById("km").value = "";
+        document.getElementById("age").value = "select";
     });

@@ -1,8 +1,11 @@
-.form {
-    justify-content: center;
-    margin: auto;
+a {
+    text-decoration: none;
 }
 
+/* .form {
+    justify-content: center;
+    margin: auto;
+} */
 
 [value="select"]{
     display: none;
