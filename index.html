@@ -17,23 +17,30 @@
 </head>
 
 <body>
-    <div class="container d-flex form">
-        <div class="row">
-            <div class="col-6 my-3">
-                <label for="km" class="total_km-label">Inserisci i Km da percorrere</label>
-                <input type="text" class="total_km" name="km" id="km" aria-describedby="helpId" placeholder="ex. 10"
-                    required>
-            </div>
+    <section id="data_request">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div class="km_request">
+            <label for="km">Inserisci i Km da percorrere</label>
+            <input id="km" type="number">
+        </div>
+        <!-- <div class="km_request">
+            <label for="km">Inserisci la tua età</label>
+            <input id="age" type="number">
+        </div> -->
+        <div class="choose_you_age_gap"></div>
+        <label for="age">Fascia d'età</label>
+        <select name="scelta" id="age">
+            <option value="minor">Minorenne</option>
+            <option value="adult">Maggiorenne</option>
+            <option value="over_65">Over 65</option>
 
-            <div class="col-6 my-3">
-                <label for="age" class="user_age-label">Inserisci la tua età</label>
-                <input type="text" class="user_age" name="age" id="age" aria-describedby="helpId" placeholder="ex. 10">
-            </div>
-
-            <button class="btn" type="submit" class="btn btn-primary"> Genera </button>
+        <div class="buttons">
+            <a href="#" id="generate" class="btn">Genera</a>
+            <!-- <a href="#" id="cancel" class="btn">Annulla</a> -->
         </div>
 
-    </div>
+        </div>
+    </section>
 
     <script src="./assets/js/main.js"></script>
 </body>
