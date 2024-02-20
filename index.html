@@ -11,11 +11,13 @@
 <body>
     <div class="container">
         <!-- Form -->
-        <form action="">
-            <input type="number" name="km" id="km" placeholder="Inserisci il numero di chilometri da percorrere (km)" required>
-            <input type="number" name="age" id="age" placeholder="Inserisci la tua età">
-            <button>Genera</button>
-        </form>
+        <div class="form">
+            <label for="total_km">Inserisci i Km da percorrere</label>
+            <input type="number" name="total_km" id="total_km" placeholder="ex 10" >
+            <label for="user_age"></label>
+            <input type="number" name="user_age" id="user_age" placeholder="ex 20">
+            <button class="btn_generate">Genera</button>
+        </div>
     </div>
 
     <script src="./assets/js/main.js"></script>
