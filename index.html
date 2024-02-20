@@ -15,28 +15,34 @@
 </head>
 
 <body>
-    <section id="data_request">
-        <h1>Calcola il prezzo del tuo biglietto</h1>
-        <!-- Km -->
-        <div class="km_request">
-            <label for="km">Inserisci i Km da percorrere</label>
-            <input id="km" type="number">
-        </div>
+    <section class="container container_style" id="data_request">
+        <div class="row">
+            <div class="col-12">
+                <h1>Calcola il prezzo del tuo biglietto</h1>
+                <!-- Km -->
+                <div class="km_request">
+                    <label class="d-block" for="km">Inserisci i Km da percorrere</label>
+                    <input id="km" type="number">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 py-2">
+                <!-- Age -->
+                <div class="choose_you_age_gap"></div>
+                <label class="d-block" for="age">Fascia d'età</label>
+                <select name="scelta" id="age">
+                    <option value="select">Seleziona</option>
+                    <option id="minor">Minorenne</option>
+                    <option id="adult">Maggiorenne</option>
+                    <option id="over_65">Over 65</option>
+                </select>
+            </div>
+            <div class="col-12 d-flex">
+                <div class="buttons py-4">
+                    <a href="#" id="btn_generate" class="btn-light bg-primary p-2 me-3 me-lg-5">Genera</a>
+                    <a href="#" id="btn_cancel" class="btn-light bg-primary p-2">Annulla</a>
+                </div>
 
-        <!-- Age -->
-        <div class="choose_you_age_gap"></div>
-        <label for="age">Fascia d'età</label>
-        <select name="scelta" id="age">
-            <option value="select" >Seleziona</option>
-            <option id="minor">Minorenne</option>
-            <option id="adult">Maggiorenne</option>
-            <option id="over_65">Over 65</option>
-        </select>
-        <div class="buttons">
-            <a href="#" id="btn_generate" class="btn-light">Genera</a>
-            <a href="#" id="btn_cancel" class="btn-light">Annulla</a>
-        </div>
-
+            </div>
         </div>
     </section>
 

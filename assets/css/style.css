@@ -1,11 +1,26 @@
-a {
-    text-decoration: none;
+/* UTILITIES  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed;
 }
 
-/* .form {
+body{
+    height: 100vh;
+    overflow-y: auto;
+}
+.container_style{
+    display: flex;
     justify-content: center;
-    margin: auto;
-} */
+    margin: 20% auto;
+
+}
+
+[id^="btn_"]{
+    text-decoration: none;
+    color: white;
+}
 
 [value="select"]{
     display: none;
