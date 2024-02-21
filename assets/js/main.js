@@ -56,6 +56,8 @@ btn_generate.addEventListener("click", function () {
         // cancella parametri
         document.getElementById("km").value = "";
         document.getElementById("age").value = "select";
+        document.getElementById("full_name").value = "";
+       
 
         document.getElementById("name_print").innerHTML = " "
         document.getElementById("vagon").innerHTML = " "

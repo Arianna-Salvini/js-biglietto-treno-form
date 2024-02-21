@@ -25,13 +25,13 @@
                             <!-- fullname -->
                             <div class="col-12 col-lg-4 py-2">
                                 <label class="d-block" for="full_name">Inserisci Nome e Cognome</label>
-                                <input class="user_name" id="full_name" type="text" maxlength="30">
+                                <input class="user_name" id="full_name" type="text" maxlength="30" required>
                             </div>
                             <!-- km request -->
                             <div class="col-12 col-lg-4 py-2">
                                 <div class="km_request">
-                                    <label class="d-block" for="km" required>Inserisci i Km da percorrere</label>
-                                    <input id="km" type="number">
+                                    <label class="d-block" for="km">Inserisci i Km da percorrere</label>
+                                    <input id="km" type="number" required>
                                 </div>
                             </div>
                             <!-- Age -->
@@ -56,7 +56,7 @@
                         </div>
                 </section>
                 <div class="col-12">
-                    <section id="ticket_data card_ticket" class="container-fluid">
+                    <section id="ticket_data" class=" card_ticket container d-flex bg-light p-3 rounded mt-3">
                         <!-- Ticket with data -->
                         <div class="row row-cols-3">
                             <h2 class="col-12 py-2">Il tuo Biglietto</h2>
