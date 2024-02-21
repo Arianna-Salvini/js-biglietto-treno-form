@@ -33,10 +33,36 @@ btn_generate.addEventListener("click", function () {
 
         console.log(amount_tot);
 
+        const passenger_name =  document.getElementById("full_name").value;
+        console.log(passenger_name);
+
+        // creazione dati biglietto in pagina
+        document.getElementById("name_print").innerHTML = passenger_name;
+
+        const vagon_number = Math.floor(Math.random() * 9) + 1;
+        console.log("Carrozza:", vagon_number);
+
+        document.getElementById("vagon").innerHTML = vagon_number;
+
+        document.getElementById("ticket_price_print").innerHTML = `${amount_tot} €`;
+
+        //creazione del bilgietto
+
+        document.getElementById("card_ticket").className = "show"
     });
 
     const btn_cancel = document.getElementById("btn_cancel")
     btn_cancel.addEventListener("click", function () {
+        // cancella parametri
         document.getElementById("km").value = "";
         document.getElementById("age").value = "select";
+
+        document.getElementById("name_print").innerHTML = " "
+        document.getElementById("vagon").innerHTML = " "
+        document.getElementById("ticket_price_print").innerHTML = " "
+
+        // nascondi biglietto
+        document.getElementById("ticket").className = "hidden";
+        document.getElementById("card_ticket").className = "hidden";
     });
+    

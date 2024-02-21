@@ -14,28 +14,28 @@
 
 </head>
 
-<body>
-    <div class="user_input container d-flex container_style justify-content-center">
+<body class="bg_color_primary">
+    <div class="user_input container-fluid d-flex container_style justify-content-center">
         <div class="row">
             <div class="col-12">
-                <div class="card">
-                    <section class="container-fluid  d-flex " id="data_request">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Calcola il prezzo del tuo biglietto</h2>
-                                <!-- fullname -->
-                                <div class="col-12 col-lg-6 py-2">
-                                    <label class="d-block" for="full_name">Inserisci Nome e Cognome</label>
-                                    <input class="user_name" id="full_name" type="text" maxlength="30">
-                                </div>
-                                <div class="col-12 col-lg-6 py-2"></div>
+                <section class="container d-flex bg-light p-3 rounded" id="data_request">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Calcola il prezzo del tuo biglietto</h2>
+                            <!-- fullname -->
+                            <div class="col-12 col-lg-4 py-2">
+                                <label class="d-block" for="full_name">Inserisci Nome e Cognome</label>
+                                <input class="user_name" id="full_name" type="text" maxlength="30">
+                            </div>
+                            <!-- km request -->
+                            <div class="col-12 col-lg-4 py-2">
                                 <div class="km_request">
                                     <label class="d-block" for="km" required>Inserisci i Km da percorrere</label>
                                     <input id="km" type="number">
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 py-2">
-                                <!-- Age -->
+                            <!-- Age -->
+                            <div class="col-12 col-lg-4 py-2">
                                 <div class="choose_you_age_gap"></div>
                                 <label class="d-block" for="age">Fascia d'età</label>
                                 <select name="scelta" id="age">
@@ -45,30 +45,42 @@
                                     <option id="over_65">Over 65</option>
                                 </select>
                             </div>
-                            <section>
-                                <!-- Buttons -->
-                                <div class="col-12 d-flex d-flex justify-content-center py2">
-                                    <div class="buttons pt-4 ">
-                                        <a href="#" id="btn_generate"
-                                            class="btn-light bg-primary p-2 me-3 me-lg-5">Genera</a>
-                                        <a href="#" id="btn_cancel" class="btn-light bg-primary p-2">Annulla</a>
-                                    </div>
-
+                            <!-- Buttons -->
+                            <div class="col-12 d-flex d-flex justify-content-center py2">
+                                <div class="buttons py-4 ">
+                                    <a href="#" id="btn_generate"
+                                        class="btn-light bg-primary p-2 me-3 me-lg-5">Genera</a>
+                                    <a href="#" id="btn_cancel" class="btn-light bg-primary p-2">Annulla</a>
                                 </div>
+                            </div>
+                        </div>
+                </section>
+                <div class="col-12">
+                    <section id="ticket_data card_ticket" class="container-fluid">
+                        <!-- Ticket with data -->
+                        <div class="row row-cols-3">
+                            <h2 class="col-12 py-2">Il tuo Biglietto</h2>
+
+                            <div class="col-4 py-2">
+                                <div class="card card_ticket">
+                                    <h6>Passeggero</h6>
+                                    <div id="name_print"></div>
+                                </div>
+                            </div>
+                            <div class="col-4 py-2" id="vagon_number">
+                                <div class="card card_ticket">
+                                    <h6>Carrozza</h6>
+                                    <div id="vagon"></div>
+                                </div>
+                            </div>
+                            <div class="col-4 py-2" id="price_print ">
+                                <div class="card card_ticket">
+                                    <h6>Costo BIglietto</h6>
+                                    <div id="ticket_price_print"></div>
+                                </div>
+                            </div>
                         </div>
                     </section>
-                </div>
-                <div class="col-12">
-                    <div class="card">
-                        <section>
-                            <!-- Ticket with data -->
-                            <div class="row row-cols-3">
-                                <h2 class="col-12 py-2">Il tuo Biglietto</h2>
-                                <div class="col-6 name_print py-2"></div>
-                                <div class="col-6 price_print py-2"></div>
-                            </div>
-                        </section>
-                    </div>
                 </div>
             </div>
         </div>
